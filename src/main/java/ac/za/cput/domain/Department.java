@@ -1,6 +1,5 @@
 package ac.za.cput.domain;
 
-import java.lang.module.ModuleDescriptor;
 import java.util.Locale;
 
 public class Department {
