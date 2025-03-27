@@ -16,11 +16,7 @@ public class Department {
     }
 
     public String getDepartmentName() {
-        return DepartmentName;
-    }
-
-    public String getDepartmentId() {
-        return DeparmentId;
+        return departmentName;
     }
 
     public String getDepartmentId() {
