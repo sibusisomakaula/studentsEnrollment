@@ -1,6 +1,5 @@
 package ac.za.cput.domain;
 
-import java.lang.module.ModuleDescriptor;
 import java.util.Locale;
 
 public class Department {
@@ -20,7 +19,7 @@ public class Department {
     }
 
     public String getDepartmentId() {
-        return departmentId;
+        return deparmentId;
     }
 
     @Override
