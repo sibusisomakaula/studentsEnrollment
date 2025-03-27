@@ -16,15 +16,11 @@ public class Department {
     }
 
     public String getDepartmentName() {
-        return DepartmentName;
+        return departmentName;
     }
 
     public String getDepartmentId() {
-        return DeparmentId;
-    }
-
-    public String getDepartmentId() {
-        return departmentId;
+        return deparmentId;
     }
 
     @Override
