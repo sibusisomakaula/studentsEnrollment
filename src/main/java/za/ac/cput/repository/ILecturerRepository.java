@@ -1,4 +1,4 @@
-package za.ac.cput.repository;
+package ac.za.cput.repository;
 
 import za.ac.cput.domain.Course;
 import za.ac.cput.domain.Lecturer;
