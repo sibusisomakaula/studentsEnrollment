@@ -3,7 +3,7 @@ package ac.za.cput.Factory;
 import ac.za.cput.domain.Lecturer;
 import ac.za.cput.util.Helper;
 
-public class lecturerFactory {
+public class LecturerFactory {
     public static Lecturer createLecturer(String lecturerID,String firstName, String lastName, String departmentID) {
         if (Helper.isNullOrEmpty(lecturerID) || Helper.isNullOrEmpty(firstName) || Helper.isNullOrEmpty(lastName)
         || Helper.isNullOrEmpty(departmentID)) {
