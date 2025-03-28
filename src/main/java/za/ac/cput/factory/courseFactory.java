@@ -1,7 +1,7 @@
-package ac.za.cput.factory;
+package za.ac.cput.factory;
 
-import ac.za.cput.domain.Course;
-import ac.za.cput.util.Helper;
+import za.ac.cput.domain.Course;
+import za.ac.cput.util.Helper;
 
 public class courseFactory {
     public static Course createCourse(String courseName, String courseId, String lecturerId,String departmentId) {

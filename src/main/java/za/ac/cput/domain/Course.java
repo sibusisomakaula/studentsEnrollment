@@ -1,7 +1,4 @@
-package ac.za.cput.domain;
-
-import java.lang.module.ModuleDescriptor;
-import java.util.Locale;
+package za.ac.cput.domain;
 
 public class Course {
     private String courseName;

@@ -1,4 +1,4 @@
-package ac.za.cput.domain;
+package za.ac.cput.domain;
 
 public class Lecturer {
     private String lecturerID ;

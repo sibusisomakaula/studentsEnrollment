@@ -1,6 +1,6 @@
-package ac.za.cput.repository;
+package za.ac.cput.repository;
 
-import ac.za.cput.domain.Course;
+import za.ac.cput.domain.Course;
 
 import java.util.ArrayList;
 import java.util.List;

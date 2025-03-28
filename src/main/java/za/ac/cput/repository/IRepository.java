@@ -1,6 +1,4 @@
-package ac.za.cput.repository;
-
-import ac.za.cput.domain.Course;
+package za.ac.cput.repository;
 
 public interface IRepository<Course,courseId> {
 
