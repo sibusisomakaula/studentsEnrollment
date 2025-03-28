@@ -22,7 +22,7 @@ public class MainLecturer {
         String departmentID = sc.nextLine();
 
         //Lecturer object using Factory
-        Lecturer lecturer = lecturerFactory.createLecturer(lecturerID, firstName, lastName, departmentID);
+        Lecturer lecturer =LecturerFactory.createLecturer(lecturerID, firstName, lastName, departmentID);
 
         if (lecturer != null) {
             System.out.println("/nLecturer Created Successfully");
