@@ -1,7 +1,7 @@
 package ac.za.cput;
 
 import ac.za.cput.domain.Lecturer;
-import ac.za.cput.Factory.lecturerFactory;
+import ac.za.cput.Factory.LecturerFactory;
 import java.util.Scanner;
 
 public class MainLecturer {
