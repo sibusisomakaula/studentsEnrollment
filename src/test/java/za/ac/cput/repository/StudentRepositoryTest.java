@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryRepositoryTest {
 
     private static IStudentRepository repository = StudentRepository.getInstance();
-    private Student student = StudentRepository.createStudent("cputlibrary120", "IThala Lencwadi", "cputlib@gmail.com", "Hanover St, D6 Campus, Cape Town, 8000", "01");;
+    private Student student = StudentRepository.createStudent("12345", "Dan" ,"Jacobs", "studentDJ@gmail.com", "CS01");;
 
 
     @Test
@@ -30,11 +30,11 @@ class LibraryRepositoryTest {
 
     @Test
     void update() {
-        Student updateStudent = new Student().Builder().copy(student).setStudentEmail("cput@gmail.com").build();
+        Student updateStudent = new Student().Builder().copy(student).setStudentEmail("studentDJ@gmail.com").build();
         Student createStudent = repository.create(create());
         Student updatedStudent = repository.update(createStudent);
         assertNotNull(updatedStudent);
-        System.out.println("New Library: " + updatedStudent);
+        System.out.println("New Student: " + updatedStudent);
     }
 
     @Test
