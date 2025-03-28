@@ -1,4 +1,4 @@
-package za.ac.cput.domain;
+package ac.za.cput.domain;
 
 import java.time.LocalDate;
 
