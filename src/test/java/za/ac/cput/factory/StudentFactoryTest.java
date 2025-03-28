@@ -12,11 +12,11 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class LibraryFactoryTest {
 
-    private static Student l1 = StudentFactory.createStudent("1245","Amansa", "Madapa",
+    private static Student l1 = StudentFactory.createStudent("1245","Amy", "Good",
             "222d", "123");
-    private static Student l2 = StudentFactory.createStudent("123456","Sino", "Lasta",
+    private static Student l2 = StudentFactory.createStudent("123456","Sinolo", "Pasta",
             "45566", "1235");
-    private static Student l3 = StudentFactory.createStudent("1245","Cobe", "Rmafsd",
+    private static Student l3 = StudentFactory.createStudent("1245","Cobey", "Gomez",
             "78566", "7654321098");
 
     @Test
