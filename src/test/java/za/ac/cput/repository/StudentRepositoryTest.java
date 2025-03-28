@@ -16,38 +16,41 @@ class StudentRepositoryTest {
 
     @Test
     void create() {
-        Student create = repository.create(student);
-        System.out.println(create);
+        Student created = repository.create(student);
+        assertNotNull(created);
+        System.out.println(created);
     }
 
     @Test
     void read() {
         Student create = repository.create(student);
-        Student read = repository.read(create.getStudentID());
-        System.out.println("Id: " + Student.getStudentID());
+        Student read = repository.read(created.getStudentID());
+        System.out.println("Id: " + created.getStudentID());
         assertNotNull(read);
     }
 
     @Test
     void update() {
-        Student updateStudent = new Student().Builder().copy(student).setStudentEmail("studentDJ@gmail.com").build();
-        Student createStudent = repository.create(create());
-        Student updatedStudent = repository.update(createStudent);
+        Student updateStudent = new Student.Builder().copy(student).setStudentEmail("studentDJ@gmail.com").build();
+        repository.create(student);
+        Student updated = repository.update(updatedStudent);
         assertNotNull(updatedStudent);
-        System.out.println("New Student: " + updatedStudent);
+        System.out.println("New Student" + updated);
     }
 
     @Test
     void delete() {
-        Student create = repository.create(student);
-        assertTrue(repository.delete(create.getStudentID()));
+        Student created = repository.create(student);
+        boolean deleted = repository.delete(created.getStudentID));
+        assertTrue(deleted);
     }
 
     @Test
     void getAll() {
-        Student create = repository.create(student);
-        List<Student> StudentList = repository.getAll(create);
-        assertNotNull(StudentList);
-        System.out.println(StudentList);
+         repository.create(student);
+        List<Student> studentList = repository.getAll();
+        assertNotNull(studentList);
+        assertFalse(studentList.isEmpty());
+        System.out.println(studentList);
     }
 }
