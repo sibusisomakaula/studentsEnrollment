@@ -1,9 +1,17 @@
 package za.ac.cput.util;
 
-public class Helper {
+import java.time.LocalDate;
 
-    public static boolean isNullOrEmpty(String str) {
-        if (str == null || str == null)
+public class Helper {
+    public static boolean isNullOrEmpty(String s){
+
+        if(s.isEmpty() || s == null)
+            return true;
+        return false;
+    }
+
+    public static boolean isNull(LocalDate ld) {
+        if(ld == null)
             return true;
         return false;
     }
