@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
-class LibraryRepositoryTest {
+class StudentRepositoryTest {
 
     private static IStudentRepository repository = StudentRepository.getInstance();
     private Student student = StudentRepository.createStudent("12345", "Dan" ,"Jacobs", "studentDJ@gmail.com", "CS01");;
