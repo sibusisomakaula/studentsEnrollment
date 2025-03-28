@@ -1,5 +1,8 @@
 package ac.za.cput.domain;
 
+import java.lang.module.ModuleDescriptor;
+import java.util.Locale;
+
 public class Course {
     private String courseName;
     private String courseId;
@@ -71,4 +74,3 @@ public class Course {
         public Course build(){return new Course(this);}
     }
 }
-
