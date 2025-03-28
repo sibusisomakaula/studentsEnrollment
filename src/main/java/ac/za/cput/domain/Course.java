@@ -70,6 +70,13 @@ public class Course {
             this.departmentId = departmentId;
             return this;
         }
+         public Builder copy (Course course) {
+             courseName = course.getCourseName();
+             courseName = course.getCourseId();
+             courseName = course.getLecturerId();
+             courseName = course.getDepartmentId();
+             return this;
+         }
 
         public Course build(){return new Course(this);}
     }
