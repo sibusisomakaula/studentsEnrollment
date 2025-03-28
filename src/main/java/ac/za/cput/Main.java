@@ -1,10 +1,18 @@
 package za.ac.cput;
 
-import za.ac.cput.domain.Student;
+import za.ac.cput.domain.Enrollment;
+
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        Student student = new Student.Builder().studentID("12345").firstName("Marcus") .lastName("Luther").studentEmail("marcus.luther@email.com").departmentID("CS11").build();
-        System.out.println(student);
+
+        Enrollment en1 = new Enrollment.Builder().setEnrollmentId("54321")
+                .setStudentId("12125")
+                .setCourseId("23236")
+                .setEnrollmentDate(LocalDate.now())
+                .build();
+
+        System.out.println(en1.toString());
     }
 }
