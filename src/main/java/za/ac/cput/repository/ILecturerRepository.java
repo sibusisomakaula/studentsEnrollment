@@ -1,7 +1,7 @@
 package ac.za.cput.repository;
 
-import za.ac.cput.domain.Course;
-import za.ac.cput.domain.Lecturer;
+import ac.za.cput.domain.Course;
+import ac.za.cput.domain.Lecturer;
 
 import java.util.List;
 
