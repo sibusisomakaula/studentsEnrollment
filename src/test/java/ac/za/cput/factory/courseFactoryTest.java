@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.MethodName.class)
 
 class courseFactoryTest {
+    private static CourseFactory courseFactory;
     private static Course c1 = courseFactory.createCourse("ICT", "13232", "424242", "92929");
     private static Course c2 = courseFactory.createCourse("comp science", "432", "21212", "88181");
     private static Course c3 = courseFactory.createCourse("business man", "828282", "01018887", "343344");

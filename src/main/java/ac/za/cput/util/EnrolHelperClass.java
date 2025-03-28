@@ -2,7 +2,7 @@ package za.ac.cput.util;
 
 import java.time.LocalDate;
 
-public class Helper {
+public class EnrolHelperClass {
     public static boolean isNullOrEmpty(String s){
 
         if(s.isEmpty() || s == null)

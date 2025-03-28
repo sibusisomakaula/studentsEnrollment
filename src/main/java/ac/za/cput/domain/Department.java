@@ -19,7 +19,7 @@ public class Department {
     }
 
     public String getDepartmentId() {
-        return deparmentId;
+        return departmentId;
     }
 
     @Override

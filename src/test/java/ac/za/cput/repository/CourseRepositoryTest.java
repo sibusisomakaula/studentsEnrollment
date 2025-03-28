@@ -1,7 +1,8 @@
 package ac.za.cput.repository;
 
 import ac.za.cput.domain.Course;
-import ac.za.cput.factory.courseFactory;
+import ac.za.cput.factory.CourseFactory;
+//import ac.za.cput.factory.courseFactory;
 import org.junit.jupiter.api.*;
 
 import java.util.List;
@@ -10,7 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
  @TestMethodOrder(MethodOrderer.MethodName.class)
 class CourseRepositoryTest {
 private static ICourseRepository repository = CourseRepository.getRepository();
-private Course course = courseFactory.createCourse("ICT","12345","246810","369121");
+     private CourseFactory courseFactory;
+     private Course course = courseFactory.createCourse("ICT","12345","246810","369121");
 
 
     @Test
